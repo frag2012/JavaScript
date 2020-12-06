@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<body>
+   <script>
+      "use strict";
+      //Задание №1
+      let temperatureC = +prompt("Введите температуру в градусах С");
+      let temperatureF = (9 / 5) * temperatureC + 32;
+      alert(temperatureF + " градусов по Фарнетгейту");
+
+      //Задание №2
+      let name = "Василий";
+      let admin = name;
+      alert(admin);
+
+      //Задание №3
+      let result1 = 10 + 10 + "10";
+      console.log(result1);
+      // сложение чисел 10 плюс 10 равно 20, конкатенация со строкой 10, ответ 2010
+
+      let result2 = 10 + "10" + 10;
+      console.log(result2);
+      // конкатенация числа 10 со строкой 10, конкатенация с числом 10, ответ 101010
+
+      let result3 = 10 + 10 + +"10";
+      console.log(result3);
+      // 10 плюс 10 равно 20, унарный плюс превращает строку в число, 20 плюс 10 равно 30. Ответ 30
+
+      let result4 = 10 / -"";
+      console.log(result4);
+      // ответ -infinity. Не понял почему, пустые кавычки это ноль?
+
+      let result5 = 10 / +"2,5";
+      console.log(result5);
+       // ответ получается NaN, все дело в запятой, но почему так?
+   </script>
+</body>
+
+</html>
