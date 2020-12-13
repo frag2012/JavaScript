@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<body>
+
+   <script>
+      "use strict";
+
+      /*Задание №1*/
+
+      /*Объявляем переменные, a и b получают значения, c и d пока undefined
+      инкремент в качестве префикса добавляет единицу операнду a, в итоге с=2*/
+      let a = 1, b = 1, c, d;
+      c = ++a;
+      alert(c);
+
+      /*В этом примере инкремент идет после операнда, поэтому вернет значение 1, а в переменную запишет 2*/
+      d = b++;
+      alert(d);
+
+      /*к этому этапу переменная a со значением 2, инкремент в качестве префикса увеличивает значение на единицу, итого 2+3=5*/
+      c = 2 + ++a;
+      alert(c);
+
+      /*к этому моменту переменная b со значением 2, инкремент после операнда, поэтому увеличит значение на единицу после операции, итого 2+2=4, в b запишет тройку*/
+      d = 2 + b++;
+      alert(d);
+
+      /*Выводит значение переменных, которые у нас сохранились к концу всех операций*/
+      alert(a);
+      alert(b);
+
+      /*Задание №2
+      let a = 2;
+      let x = 1 + (a *= 2);
+
+      изначально переменной a присваиваем значение 2, дальше выполняется действие в скобках умножение с присваиванием, 2 умножить на два равно 4, в a записалось значение 4, дальше 1+4=5, в x записалось значение 5
+      */
+
+
+
+
+      /*Задание №3*/
+
+      function sum(a, b) {
+         if (a >= 0 && b >= 0) {
+            return a - b;
+         }
+         else if (a < 0 && b < 0) {
+            return a * b;
+         }
+         else {
+            return a + b;
+         }
+      }
+
+      alert(sum(-5, 6));
+
+      /*Задание №4*/
+
+      function numAddition(a, b) {
+         return (a + b);
+      }
+
+      alert(numAddition(6, 12));
+
+      function numSubtraction(a, b) {
+         return (a - b);
+      }
+
+      alert(numSubtraction(7, 6));
+
+      function numMultiplication(a, b) {
+         return (a * b);
+      }
+
+      alert(numMultiplication(9, 8));
+
+      function numDivision(a, b) {
+         return (a / b);
+      }
+
+      alert(numDivision(10, 2));
+
+      /*Задание №5*/
+
+      function mathOperation(a, b, operation) {
+         switch (operation) {
+            case "add":
+               return (a + b);
+               break;
+            case "sub":
+               return (a - b);
+               break;
+            case "mul":
+               return (a * b);
+               break;
+            case "div":
+               return (a / b);
+               break;
+         }
+      }
+
+      alert(mathOperation(4, 2, "div"));
+
+
+
+
+
+
+
+
+
+
+   </script>
+
+</body>
+
+</html>
